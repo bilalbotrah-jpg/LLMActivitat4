@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #3f9c2d; 
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.logo {
+    height: 70px; 
+    width: auto;
+    display: block;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #3f9c2d; 
+    color: #111;
+    padding: 20px 40px;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+footer a {
+    color: white;
+}
+
+.cc-logo {
+    vertical-align: middle;
+    margin-left: 10px;
+    height: 30px;
+}
+
+/* --- INICIO --- */
+.main-inicio {
+    background-image: url('../img/casa_encantada.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+    position: relative;
+    min-height: 550px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: red;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    margin: 5px 0 0 0;
+}
+
+/* --- PRECIOS --- */
+.main-precios {
+    flex-grow: 1;
+    padding-bottom: 40px;
+}
+
+.titulo-pagina {
+    margin: 30px 40px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.titulo-pagina .color-azul {
+    color: #0000ff;
+}
+
+.tabla-precios {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tabla-precios th, .tabla-precios tfoot td {
+    background-color: #4a5c68; 
+    color: white;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    padding: 15px;
+    text-align: center;
+}
+
+.tabla-precios tfoot td {
+    font-style: italic;
+}
+
+.tabla-precios td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tabla-precios td.linea-interna {
+    border-top: 1px solid #e0e0e0;
+}
+
+.icon-persona {
+    height: 35px;
+    vertical-align: middle;
+}
+
+/* --- RESERVA (Formulario Ejercicio 3) --- */
+.main-reserva {
+    flex-grow: 1;
+}
+
+.caja-formulario {
+    background-color: #d8d8d8;
+    margin: 0 40px 40px 40px;
+    padding: 50px;
+    min-height: 300px;
+}
+
+fieldset {
+    border: 2px solid #4a5c68;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #3f9c2d; 
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: 1px solid #4a5c68;
+}
+
+fieldset label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+fieldset input, fieldset select, fieldset textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+fieldset small {
+    color: #666;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.botons-formulari {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-submit {
+    background-color: #3f9c2d;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.btn-submit:hover {
+    background-color: #2e7520;
+}
+
+.btn-reset {
+    background-color: #666;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-reset:hover {
+    background-color: #444;
+}
