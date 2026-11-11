@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Terror - Reserva</title>
+    <!-- Enlace al CSS corregido para tu nueva carpeta -->
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <!-- Logo con enlace a inicio -->
+        <a href="index.html">
+            <img src="../img/estrelles.jpg" alt="Logo Hotel Terror" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-reserva">
+        <h1 class="titulo-pagina">Reserve su habitación en Hotel Terror</h1>
+        <div class="caja-formulario">
+            
+            <form action="#" method="POST">
+                
+                <!-- a) Dades personals -->
+                <fieldset>
+                    <legend>Dades personals</legend>
+                    
+                    <label for="tractament">Tractament:</label>
+                    <select id="tractament" name="tractament">
+                        <option value="Sr">Sr</option>
+                        <option value="Sra">Sra</option>
+                        <option value="Srta">Srta</option>
+                    </select>
+                    <br><br>
+
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" required>
+                    
+                    <label for="cognoms">Cognoms:</label>
+                    <input type="text" id="cognoms" name="cognoms" required>
+                    
+                    <label for="telefon">Telèfon:</label>
+                    <input type="tel" id="telefon" name="telefon" required>
+                    <br><br>
+
+                    <label for="email">Correu electrònic:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="confirmar_email">Confirmar correu electrònic:</label>
+                    <input type="email" id="confirmar_email" name="confirmar_email" required>
+                    <br><br>
+
+                    <label for="contrasenya">Contrasenya:</label>
+                    <input type="password" id="contrasenya" name="contrasenya" required>
+                </fieldset>
+
+                <!-- b) Dades de la reserva -->
+                <fieldset>
+                    <legend>Dades de la reserva</legend>
+
+                    <label for="tipus_habitacio">Tipus d'habitació:</label>
+                    <select id="tipus_habitacio" name="tipus_habitacio">
+                        <option value="individual">Habitació individual</option>
+                        <option value="doble">Habitació doble</option>
+                        <option value="doble_superior">Habitació doble superior</option>
+                        <option value="triple">Habitació triple</option>
+                    </select>
+                    <br><br>
+
+                    <label for="num_persones">Número de persones:</label>
+                    <input type="number" id="num_persones" name="num_persones" min="1" required>
+                    <br><br>
+
+                    <label for="data_entrada">Data d'entrada:</label>
+                    <input type="date" id="data_entrada" name="data_entrada" required>
+                    
+                    <label for="data_sortida">Data de sortida:</label>
+                    <input type="date" id="data_sortida" name="data_sortida" required>
+                    <br><br>
+
+                    <label for="peticions">Peticions especials:</label><br>
+                    <small><em>* Aquestes peticions no es poden garantir, però es farà tot allò possible per satisfer-les.</em></small><br>
+                    <textarea id="peticions" name="peticions" rows="4" cols="50" placeholder="Ex: Llit supletori..."></textarea>
+                </fieldset>
+
+                <!-- c) Dades addicionals -->
+                <fieldset>
+                    <legend>Dades addicionals</legend>
+
+                    <input type="checkbox" id="parking" name="parking" value="cobert">
+                    <label for="parking">Reservar plaça de pàrquing cobert (8€/nit).</label><br>
+                    <small><em>* L'hotel disposa de pàrquing exterior gratuït.</em></small>
+                    <br><br>
+
+                    <label for="hora_arribada">Hora prevista d'arribada:</label>
+                    <input type="time" id="hora_arribada" name="hora_arribada">
+                    <br><br>
+
+                    <input type="checkbox" id="esmorzar" name="esmorzar" value="si">
+                    <label for="esmorzar">Afegir esmorzar per als dies d'estància (5€/dia).</label>
+                </fieldset>
+
+                <div class="botons-formulari">
+                    <input type="submit" value="Enviar Reserva" class="btn-submit">
+                    <input type="reset" value="Netejar Formulari" class="btn-reset">
+                </div>
+
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Actividad realizada por <strong>Bilal Botrah</strong></p>
+        <p>Fotografías de la portada <a href="#">Unsplash</a> 
+           <img src="../img/creative-commons.png" alt="Licencia CC" class="cc-logo">
+        </p>
+    </footer>
+</body>
+</html>
